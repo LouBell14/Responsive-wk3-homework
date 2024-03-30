@@ -38,12 +38,6 @@ a {
   text-decoration: none;
 }
 
-@media (max-width: 600px) {
-  img {
-    display: none;
-  }
-}
-
 .project-paragraphs {
   background-color: var(--secondary-color);
   padding: 20px;
@@ -69,6 +63,9 @@ a {
   text-transform: capitalize;
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
+  color: white;
+}
+.primary-link:hover {
   color: white;
 }
 
@@ -101,4 +98,22 @@ a {
 
 .email-link:hover {
   text-decoration: underline;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
 }
